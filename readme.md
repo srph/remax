@@ -102,3 +102,6 @@ This can be used as such : ````${_IMG_}/cat.jpg````.
 - [ ] Improve documentation
 - [ ] Test example
 - [ ] Add cookie library
+- [ ] Add babel-plugin-react-transform (https://github.com/gaearon/babel-plugin-react-transform/issues/46)
+- [ ] Add hot mnodule loader
+- [ ] Add Redux Devtools

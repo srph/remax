@@ -30,6 +30,8 @@ npm run prod:style
 npm test # open up localhost:9876
 ```
 
+Right now, we don't support server-side rendering yet. Run `open public/index.html` when you're done compiling.
+
 ### Aliases
 Here are some alias that you may `import` to make importing 69-levels-high of folders easier. It is not required, but highly recommended. These can be used like the following:
 ```es6

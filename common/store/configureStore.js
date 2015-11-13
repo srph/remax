@@ -9,7 +9,7 @@ export default function configureStore(initialState) {
   const store = compose(
     applyMiddleware.apply(
       null,
-      __PRODUCTION__
+      _PRODUCTION_
         ? middlewares
         : middlewares.concat([require('redux-logger')()])
     ),

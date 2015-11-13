@@ -47,6 +47,7 @@
     "koa": "^1.1.2",
     "mocha": "^2.3.3",
     "phantomjs": "^1.9.18",
+    "redbox-react": "^1.1.1",
     "sinon": "^1.17.2",
     "webpack": "^1.12.4"
   }

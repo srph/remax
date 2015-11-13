@@ -14,13 +14,13 @@ bundle install
 
 ### Development
 ```bash
-npm run build:script # build scripts
-npm run build:style # build style
+npm run build:script
+npm run build:style
 
 # for continuous development,
 # run these commands instead of the above:
-npm run watch:script # watch scripts
-npm run watch:style # watch style
+npm run watch:script
+npm run watch:style
 
 # for production (minification)
 npm run prod:script

@@ -15,7 +15,7 @@ import { render } from 'react-dom';
 // are hoisted to the topic when transpiled.
 // That's OK, but we want configureStore to run first
 // before getting this thing.
-const Root = require('views/Root');
+const Root = require('common/Root');
 
 render(
   <Root store={store} />,

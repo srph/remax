@@ -19,7 +19,7 @@ export default class Root extends React.Component {
       <div>
         <Helmet titleTemplate="React Redux Starter Kit - %s" />
         <Provider store={this.props.store}>
-          <ReduxRouter routes={routes} />
+          <ReduxRouter>{routes}</ReduxRouter>
         </Provider>
         {this.renderDevTools()}
       </div>

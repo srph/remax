@@ -8,7 +8,7 @@ exports.alias = function(base) {
     'actions': path.join(base, 'common/actions'),
     'components': path.join(base, 'common/components'),
     'constants': path.join(base, 'common/constants'),
-    'reducers': path.join(base, 'common/reducers'),
+    'modules': path.join(base, 'common/modules'),
     'store': path.join(base, 'common/store'),
     'selectors': path.join(base, 'common/selectors'),
     'utils': path.join(base, 'common/utils'),

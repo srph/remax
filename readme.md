@@ -47,7 +47,7 @@ Available aliases:
 'actions'     => './common/actions'
 'components'  => './common/components'
 'constants'   => './common/constants'
-'reducers'    => './common/reducers'
+'modules'    => './common/modules'
 'store'       => './common/store'
 'utils'       => './common/utils'
 'views'       => './common/views'

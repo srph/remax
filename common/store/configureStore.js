@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore, compose } from 'redux';
 import instance from './';
 import router from './router';
-import reducers from 'app-reducers';
+import reducers from 'modules';
 
 export default function configureStore(initialState) {
   const middlewares = [require('redux-thunk')];

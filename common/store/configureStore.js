@@ -4,17 +4,29 @@ import router from './router';
 import reducers from 'modules';
 
 export default function configureStore(initialState) {
-  const middlewares = [require('redux-thunk')];
+  let createStoreWithMiddleware = null;
+  let middlewares = [require('redux-thunk')];
 
-  const store = compose(
-    applyMiddleware.apply(
-      null,
-      _PRODUCTION_
-        ? middlewares
-        : middlewares.concat([require('redux-logger')()])
-    ),
-    router
-  )(createStore)(reducers, initialState);
+  if ( _DEV_ ) {
+    const DevTools = require('redux-devtools');
+
+    createStoreWithMiddleware = compose(
+      applyMiddleware.apply(
+        null,
+        middlewares.concat([require('redux-logger')()])
+      ),
+      router,
+      DevTools.instrument()
+    );
+  } else {
+    createStoreWithMiddleware = compose(
+      applyMiddleware.apply(null, middlewares),
+      router
+    );
+  }
+
+  const finalCreateStore = createStoreWithMiddleware(createStore);
+  const store = finalCreateStore(reducers, initialState);
 
   instance.set(store);
 

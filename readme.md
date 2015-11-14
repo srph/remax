@@ -52,7 +52,7 @@ Available aliases:
 ```
 
 ### Globals
-These are global variables available to you anywhere in your source code. If you wish to modify them, they can be found as the `globals` key in `~/config/index.js`.
+These are global variables available to you anywhere in your source code. If you wish to modify them, they can be found as the `globals` key in `config/index.js`.
 
 #### `_ENV_`
 A global variable for `process.env.NODE_ENV`.

@@ -35,11 +35,7 @@ export default class Root extends React.Component {
       const LogMonitor = require('redux-devtools-log-monitor');
 
       const DevTools = createDevTools(
-        <DockMonitor
-          toggleVisibilityKey="H"
-          changePositionKey="Q">
-          <LogMonitor store={this.props.store.devToolsStore} />
-        </DockMonitor>
+        <LogMonitor store={this.props.store.devToolsStore} />
       );
 
       return <DevTools />;

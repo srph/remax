@@ -20,6 +20,6 @@ exports._DEV_ = !exports._PRODUCTION_;
 exports._API_ = exports._PRODUCTION_
   ? 'http://api.www.com'
   : process.env.API || 'http://api.www.com';
-exports._IMG_PATH_ = '/img';
+exports._IMG_ = '/img';
 exports._CDN_ = '//my-cdn.org/';
 module.exports = exports;

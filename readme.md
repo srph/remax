@@ -68,7 +68,7 @@ The URI of the your API.
 
 Mainly used to concatenate your requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.
 
-#### `_IMG_PATH_`
+#### `_IMG_`
 Path to your images folder.
 
 This can be used as such : ````${_IMG_}/cat.jpg````.

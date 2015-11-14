@@ -19,9 +19,11 @@ export default class Root extends React.Component {
       <div>
         <Helmet titleTemplate="React Redux Starter Kit - %s" />
         <Provider store={this.props.store}>
-          <ReduxRouter>{routes}</ReduxRouter>
+          <div>
+            <ReduxRouter>{routes}</ReduxRouter>
+            {this.renderDevTools()}
+          </div>
         </Provider>
-        {this.renderDevTools()}
       </div>
     );
   }
@@ -32,13 +34,15 @@ export default class Root extends React.Component {
       const DockMonitor = require('redux-devtools-dock-monitor');
       const LogMonitor = require('redux-devtools-log-monitor');
 
-      return createDevTools(
+      const DevTools = createDevTools(
         <DockMonitor
           toggleVisibilityKey="H"
           changePositionKey="Q">
           <LogMonitor store={this.props.store.devToolsStore} />
         </DockMonitor>
       );
+
+      return <DevTools />;
     }
 
     return null;

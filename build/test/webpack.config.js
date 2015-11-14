@@ -31,8 +31,7 @@ module.exports = {
       _DEV_: parse(config._DEV_),
       _PRODUCTION_: parse(config._PRODUCTION_),
       _CDN_: parse(config._CDN_),
-      _IMG_: parse(config._IMG_),
-      _AUTH_TOKEN_KEY_: parse(config._TOKEN_KEY_)
+      _IMG_: parse(config._IMG_)
     })
   ]
 };

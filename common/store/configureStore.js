@@ -2,25 +2,22 @@ import { applyMiddleware, createStore, compose } from 'redux';
 import instance from './';
 import router from './router';
 import reducers from 'modules';
+import thunk from 'redux-thunk';
 
 export default function configureStore(initialState) {
   let createStoreWithMiddleware = null;
-  let middlewares = [require('redux-thunk')];
 
   if ( _DEV_ ) {
     const DevTools = require('redux-devtools');
 
     createStoreWithMiddleware = compose(
-      applyMiddleware.apply(
-        null,
-        middlewares.concat([require('redux-logger')()])
-      ),
+      applyMiddleware.apply(thunk),
       router,
       DevTools.instrument()
     );
   } else {
     createStoreWithMiddleware = compose(
-      applyMiddleware.apply(null, middlewares),
+      applyMiddleware(thunk),
       router
     );
   }

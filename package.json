@@ -21,6 +21,7 @@
     "babel-polyfill": "^6.1.19",
     "classnames": "^2.2.0",
     "cookie-dough": "0.0.6",
+    "cookie-machine": "^0.1.1",
     "history": "^1.13.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",

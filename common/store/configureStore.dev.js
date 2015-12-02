@@ -7,7 +7,7 @@ import DevTools from '../components/DevTools';
 
 export default function configureStore(initialState) {
   const createStoreWithMiddleware = compose(
-    applyMiddleware.apply(thunk),
+    applyMiddleware(thunk),
     router,
     DevTools.instrument()
   );

@@ -8,8 +8,8 @@
     "build:script": "node_modules/.bin/webpack --config=build/webpack.config.js -v -d --display-error-details",
     "watch:script": "node_modules/.bin/webpack --config=build/webpack.config.js -w -v -d --display-error-details",
     "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js -p -v -d --display-error-details",
-    "build:style": "sass common/styles/main:public/dist/style.css",
-    "watch:style": "sass --watch common/styles/main:public/dist/style.css",
+    "build:style": "sass common/styles/main.scss:public/dist/style.css",
+    "watch:style": "sass --watch common/styles/main.scss:public/dist/style.css",
     "server": "node server",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },

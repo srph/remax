@@ -3,4 +3,4 @@ import path from 'path';
 import serve from 'koa-static';
 
 const build = path.resolve(__dirname, '../../public');
-export default serve(build);
+export default serve(build, { index: 'yolo.html' });

@@ -4,7 +4,7 @@ import initCookieMiddleware from './middlewares/initCookie';
 import appMiddleware from './middlewares/app';
 
 const app = koa();
-// app.use(koaStaticMiddleware);
+app.use(koaStaticMiddleware);
 app.use(initCookieMiddleware);
 app.use(appMiddleware);
 

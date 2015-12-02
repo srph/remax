@@ -1,18 +1,16 @@
 var webpack = require('webpack');
 var config = require('./config');
 var parse = JSON.stringify; // shortcut
+var path = require('path');
 
 module.exports = {
-  entry: './client/index.js', // Relative to the project root
+  entry: './client/index.js',
   output: {
-    filename: 'script.js', // Filename of the output
-    path: './public/dist' // Directory of the output
+    filename: 'script.js',
+    path: path.resolve(__dirname, '../public/dist/')
   },
   module: {
-    // Transformers
     loaders: [
-      // Transform to es6 with babel
-      // http://webpack.github.io/docs/loaders.html
       {
         test: /\.(js|jsx|es6)$/,
         exclude: /node_modules/,

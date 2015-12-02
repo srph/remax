@@ -8,10 +8,7 @@ import { Resolver } from 'react-resolver';
 import { match, RoutingContext } from 'react-router'
 import routes from '../../common/routes';
 import configureStore from '../../common/store/configureStore';
-import Root from '../../common/Root';
-
-const htmlRegex = /\${html}/;
-const initRegex = /window.__INITIAL_STATE__;/;
+import Html from '../../common/Html';
 
 export default function *appMiddleware() {
   const store = configureStore();
@@ -29,22 +26,9 @@ export default function *appMiddleware() {
     }
 
     Resolver
-      .resolve(() => <Root store={store} />)
+      .resolve(() => <Html store={store} />)
       .then(({ Resolved }) => {
-        const state = store.getState(); // Redux initialState
-        const html = path.resolve(__dirname, '../../public/index.html'); // Path to the html file
-        const template = fs.readFileSync(html, 'utf-8');
-        const page = template
-          .replace(
-            initRegex,
-            `window.__INITIAL_STATE__ = ${JSON.stringify(state)}`
-          )
-          .replace(
-            htmlRegex,
-            renderToString(<Resolved />)
-          );
-
-        this.response.body = page;
+        this.response.body = renderToString(<Resolved />);
       })
       .catch(err => {
         console.log(err.stack);

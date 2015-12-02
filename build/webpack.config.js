@@ -35,7 +35,9 @@ module.exports = {
       _PRODUCTION_: parse(config._PRODUCTION_),
       _CDN_: parse(config._CDN_),
       _IMG_: parse(config._IMG_),
-      _SSR_: parse(config._SSR_)
+      // Server-side rendering option is explicitly set to false.
+      // This is set only to true for the server.
+      _SSR_: false
     })
   ]
 };

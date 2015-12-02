@@ -10,7 +10,7 @@
     "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js -p -v -d --display-error-details",
     "build:style": "sass common/styles/main.scss:public/dist/style.css",
     "watch:style": "sass --watch common/styles/main.scss:public/dist/style.css",
-    "server": "node server",
+    "server": "npm run build script && npm run build:style && node server",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },
   "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",

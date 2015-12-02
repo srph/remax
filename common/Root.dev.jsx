@@ -4,7 +4,7 @@ import routes from './routes';
 import { Provider } from 'react-redux';
 import { ReduxRouter } from 'redux-router';
 import Helmet from 'react-helmet';
-import DevTools from 'components/DevTools';
+import DevTools from './components/DevTools';
 
 export default class Root extends React.Component {
   static propTypes = {

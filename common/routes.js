@@ -4,8 +4,7 @@ import AppView from './views/App';
 import HomeView from './views/home';
 
 export default (
-  <Route component={AppView}>
+  <Route path="/" component={AppView}>
     <IndexRoute component={HomeView} />
-    <Route path="*" component={HomeView} />
   </Route>
 );

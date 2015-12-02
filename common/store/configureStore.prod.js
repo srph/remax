@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore, compose } from 'redux';
 import instance from './';
 import router from './router';
-import reducers from 'modules';
+import reducers from '../modules';
 import thunk from 'redux-thunk';
 
 export default function configureStore(initialState) {

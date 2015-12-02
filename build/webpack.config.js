@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var config = require('./config');
 var parse = JSON.stringify; // shortcut
-var path = require('path');
 
 module.exports = {
   entry: './client/index.js', // Relative to the project root
@@ -25,8 +24,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx', '.es6'],
-    alias: config.alias(path.resolve(__dirname, '../'))
+    extensions: ['', '.js', '.json', '.jsx', '.es6']
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -36,7 +34,8 @@ module.exports = {
       _DEV_: parse(config._DEV_),
       _PRODUCTION_: parse(config._PRODUCTION_),
       _CDN_: parse(config._CDN_),
-      _IMG_: parse(config._IMG_)
+      _IMG_: parse(config._IMG_),
+      _SSR_: parse(config._SSR_)
     })
   ]
 };

@@ -1,8 +1,5 @@
-import { reduxReactRouter } from 'redux-router';
-import createHashHistory from 'history/lib/createHashHistory';
-
-const router = reduxReactRouter({
-  createHistory: createHashHistory
-});
-
-export default router;
+if ( _SSR_ ) {
+  module.exports = require('./router.server');
+} else {
+  module.exports = require('./router.prod');
+}

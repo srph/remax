@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { click } from 'modules/counter';
+import { click } from '../../modules/counter';
 
 class HomeView extends React.Component {
   static propTypes = {

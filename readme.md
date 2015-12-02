@@ -73,6 +73,11 @@ Path to your images folder.
 
 This can be used as such : ````${_IMG_}/cat.jpg````.
 
+#### `_SSR_`
+The variable to check if the environment is node. This is safer than deriving by checking variables available only to node.
+
+This is explicitly set to each config (e.g., server globals, webpack config).
+
 ### Libraries
 **Mainly**:
 - [react](http://facebook.github.io/react) - Our view library; which is what we built most of our code with.

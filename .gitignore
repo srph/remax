@@ -1,7 +1,3 @@
-# webpack-isomorphic-tools
-/webpack-stats.json
-/webpack-assets.json
-
 # Logs
 logs
 *.log

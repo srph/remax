@@ -14,6 +14,9 @@ bundle install
 
 ### Development
 ```bash
+npm run start # runs build script, style, and server
+
+# compile assets
 npm run build:script
 npm run build:style
 
@@ -26,8 +29,11 @@ npm run watch:style
 npm run prod:script
 npm run prod:style
 
+# run server
+npm run server
+
 # run tests
-npm test # open up localhost:9876
+npm test # open up localhost:9876 afterwards
 ```
 
 ### Globals

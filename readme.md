@@ -30,8 +30,6 @@ npm run prod:style
 npm test # open up localhost:9876
 ```
 
-Right now, we don't support server-side rendering yet. Run `open public/index.html` when you're done compiling.
-
 ### Globals
 These are global variables available to you anywhere in your source code. If you wish to modify them, they can be found as the `globals` key in `config/index.js`.
 

@@ -32,25 +32,6 @@ npm test # open up localhost:9876
 
 Right now, we don't support server-side rendering yet. Run `open public/index.html` when you're done compiling.
 
-### Aliases
-Here are some alias that you may `import` to make importing 69-levels-high of folders easier. It is not required, but highly recommended. These can be used like the following:
-```es6
-import configureStore from '../../common/store/configureStore'; // without alias
-import configureStore from 'app-store/configureStore'; //with alias
-```
-
-Available aliases:
-```
-'server'      => './server'
-'client'      => './client'
-'common'      => './common'
-'components'  => './common/components'
-'modules'    => './common/modules'
-'store'       => './common/store'
-'utils'       => './common/utils'
-'views'       => './common/views'
-```
-
 ### Globals
 These are global variables available to you anywhere in your source code. If you wish to modify them, they can be found as the `globals` key in `config/index.js`.
 

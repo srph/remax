@@ -36,8 +36,12 @@ npm run server
 npm test # open up localhost:9876 afterwards
 ```
 
-### Globals
-These are global variables available to you anywhere in your source code. If you wish to modify them, they can be found as the `globals` key in `config/index.js`.
+### Configuration
+This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style configuration. To start, simply copy `.env.example` to `.env`.
+```bash
+cp .env.example .env
+```
+Afterwards, modify as it suits your needs.
 
 #### `_ENV_`
 A global variable for `process.env.NODE_ENV`.
@@ -52,6 +56,16 @@ A global variable for `process.env.NODE_ENV`.
 The URI of the your API.
 
 Mainly used to concatenate your requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.
+
+#### `_IMG_`
+Path to your images folder.
+
+This can be used as such : ````${_IMG_}/cat.jpg````.
+
+#### `_SSR_`
+The variable to check if the environment is node. This is safer than deriving by checking variables available only to node.
+
+This is explicitly set to each config (e.g., server globals, webpack config).
 
 #### `_IMG_`
 Path to your images folder.

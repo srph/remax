@@ -37,7 +37,7 @@ npm test # open up localhost:9876 afterwards
 ```
 
 ### Configuration
-This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style configuration. To start, simply copy `.env.example` to `.env`.
+This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.
 ```bash
 cp .env.example .env
 ```

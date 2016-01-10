@@ -91,7 +91,6 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [react-redux](http://github.com/gaearon/react-redux) - Library to use Redux for ReactJS.
 - [redux-simple-router](http://rackt.github.io/redux) (`v1.0.2`)
 - [redux-thunk](http://github.com/gaearon/redux-thunk) - So we can if-else / async for our action-creators.
-- [reselect](http://github.com/faassen/reselect) - For Redux, a *selector* library; also helps us cache it.
 - [classnames](http://github.com/JedWatson/classnames) - Utility so we can easily join classnames.
 - [axios](https://github.com/mzabriskie/axios) - Our *isomorphic* HTTP / AJAX Library.
 - [koa](http://koajs.com) - Our server-side micro framework.

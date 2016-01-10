@@ -1,7 +1,7 @@
-## react-redux-starter-kit
+# react-redux-starter-kit
 An opinionated starter kit.
 
-### Installing
+## Installing
 Some requirements include:
 - [node](nodejs.org) / [npm](npmjs.com)
 - [ruby](ruby-lang.org) / [gems](rubygems.org) / [bundler](bundler.io)
@@ -12,7 +12,7 @@ npm install
 bundle install
 ```
 
-### Development
+## Development
 ```bash
 npm run start # runs build script, style, and server
 
@@ -36,7 +36,7 @@ npm run server
 npm test # open up localhost:9876 afterwards
 ```
 
-### Configuration
+## Configuration
 This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.
 ```bash
 cp .env.example .env
@@ -82,7 +82,7 @@ The variable to check if the environment is node. This is safer than deriving by
 
 This is explicitly set to each config (e.g., server globals, webpack config).
 
-### Libraries
+## Libraries
 **Mainly**:
 - [react](http://facebook.github.io/react) - Our view library; which is what we built most of our code with.
 - [react-router](http://rackt.github.io/react-router) - Client-side (Browser) router.

@@ -84,20 +84,19 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 
 ## Libraries
 **Mainly**:
-- [react](http://facebook.github.io/react) - Our view library; which is what we built most of our code with.
-- [react-router](http://rackt.github.io/react-router) - Client-side (Browser) router.
-- [history](http://rackt.github.io/history) - React-Router's history library.
-- [redux](http://rackt.github.io/redux) - Our [Flux](http://facebook.github.io/redux) library.
-- [react-redux](http://github.com/gaearon/react-redux) - Library to use Redux for ReactJS.
+- [react](http://facebook.github.io/react) (`v0.14.2`)
+- [react-router](http://rackt.github.io/react-router) (`v1.0.0`)
+- [redux](http://rackt.github.io/redux) (`v3.0.4`)
+- [react-redux](http://github.com/gaearon/react-redux) (`v4.0.0`)
 - [redux-simple-router](http://rackt.github.io/redux) (`v1.0.2`)
-- [redux-thunk](http://github.com/gaearon/redux-thunk) - So we can if-else / async for our action-creators.
-- [classnames](http://github.com/JedWatson/classnames) - Utility so we can easily join classnames.
-- [axios](https://github.com/mzabriskie/axios) - Our *isomorphic* HTTP / AJAX Library.
-- [koa](http://koajs.com) - Our server-side micro framework.
+- [redux-thunk](http://github.com/gaearon/redux-thunk) (`v1.0.0`)
+- [classnames](http://github.com/JedWatson/classnames) (`v2.2.0`)
+- [axios](https://github.com/mzabriskie/axios) (`v0.7.0`)
+- [koa](http://koajs.com) (`v1.1.2`)
 
 **Development**:
-- [webpack](http://webpack.github.io) - Our script build tool. So we can `require`, and aliases.
-- [babel](http://babeljs.io) - So we can write ES6 code.
-- [karma](http://karma-runner.github.io/) - Our test runner; so we can run tests in different environments.
-- [tape](http://github.com/substack/tape/) - tap-producing test harness for node and browsers.
-- [sinon](sinonjs.org) - Spying / stubbing library for tests
+- [webpack](http://webpack.github.io)
+- [babel](http://babeljs.io) (`v6.1.5`)
+- [karma](http://karma-runner.github.io/) (`v0.13.15`)
+- [tape](http://github.com/substack/tape/) (`v4.4.0`)
+- [sinon](sinonjs.org) (`v1.17.2`)

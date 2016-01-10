@@ -1,12 +1,14 @@
 import 'babel-polyfill';
 import '../common/utils/bootstrap';
 import React from 'react';
-import { render } from 'react-dom';
-import Root from '../common/Root';
+import {render} from 'react-dom';
+import createHashHistory from 'history/lib/createHashHistory';
 import configureStore from '../common/store/configureStore';
+import Root from '../common/Root';
 
-const $target = document.getElementById('mount');
+const history = createHashHistory({ queryKey: false });
 const store = configureStore(window.__INITIAL_STATE__);
-const node = <Root store={store} />;
+const node = <Root history={history} store={store} />;
+const $target = document.getElementById('mount');
 
 render(node, $target);

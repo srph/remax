@@ -5,7 +5,7 @@ import '../../common/utils/bootstrap';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
 import {Resolver} from 'react-resolver';
-import {match, RoutingContext} from 'react-router'
+import {match} from 'react-router'
 import routes from '../../common/routes';
 import createMemoryHistory from 'history/lib/createMemoryHistory';
 import configureStore from '../../common/store/configureStore';

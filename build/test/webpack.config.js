@@ -37,5 +37,10 @@ module.exports = {
       // This is set only to true for the server.
       _SSR_: false
     })
-  ]
+  ],
+  // http://rmurphey.com/blog/2015/07/20/karma-webpack-tape-code-coverage
+  // Tell webpack how to deal with tape's `fs` dependency
+  node: {
+    fs: 'empty'
+  }
 };

@@ -11,7 +11,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai', 'sinon'],
+    frameworks: ['tap'],
 
 
     // list of files / patterns to load in the browser
@@ -40,7 +40,7 @@ module.exports = function(config) {
     // Mocha config
     // https://github.com/karma-runner/karma-mocha
     client: {
-      mocha: {
+      tape: {
         reporter: 'html', // change Karma's debug.html to the mocha web reporter
         ui: 'bdd'
       }
@@ -50,7 +50,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port

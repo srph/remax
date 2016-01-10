@@ -1,4 +1,3 @@
-var path = require('path');
 // Karma configuration
 // Generated on Mon Sep 28 2015 17:14:50 GMT+0800 (PHT)
 

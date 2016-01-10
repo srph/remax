@@ -89,6 +89,7 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [history](http://rackt.github.io/history) - React-Router's history library.
 - [redux](http://rackt.github.io/redux) - Our [Flux](http://facebook.github.io/redux) library.
 - [react-redux](http://github.com/gaearon/react-redux) - Library to use Redux for ReactJS.
+- [redux-simple-router](http://rackt.github.io/redux) (`v1.0.2`)
 - [redux-thunk](http://github.com/gaearon/redux-thunk) - So we can if-else / async for our action-creators.
 - [reselect](http://github.com/faassen/reselect) - For Redux, a *selector* library; also helps us cache it.
 - [classnames](http://github.com/JedWatson/classnames) - Utility so we can easily join classnames.

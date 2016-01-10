@@ -1,3 +1,4 @@
+var path = require('path');
 // Karma configuration
 // Generated on Mon Sep 28 2015 17:14:50 GMT+0800 (PHT)
 
@@ -15,7 +16,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '../../node_modules/babel-core/browser-polyfill.js',
+      '../../node_modules/babel/dist/polyfill.js',
       './webpack.files.js'
     ],
 

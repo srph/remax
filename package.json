@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma --config=build/test/karma.conf.js",
+    "test": "karma start build/test/karma.conf.js",
     "build:script": "node_modules/.bin/webpack --config=build/webpack.config.js -v -d --display-error-details",
     "watch:script": "node_modules/.bin/webpack --config=build/webpack.config.js -w -v -d --display-error-details",
     "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js -p -v -d --display-error-details",
@@ -51,6 +51,8 @@
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-sinon": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.6",
+    "karma-webpack": "^1.7.0",
     "koa": "^1.1.2",
     "mocha": "^2.3.3",
     "phantomjs": "^1.9.18",

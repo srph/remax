@@ -1,6 +1,6 @@
 var webpack = require('webpack');
-var config = require('../config');
-var parse = JSON.stringify; // shortcu
+var path = require('path');
+var s = JSON.stringify; // shortcu
 
 var env = path.resolve(__dirname, '../../.env');
 require('dotenv').load({ path: env });

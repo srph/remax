@@ -46,7 +46,6 @@
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18",
     "dotenv": "^1.2.0",
-    "faucet": "0.0.1",
     "karma": "^0.13.15",
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-sinon": "^1.0.4",

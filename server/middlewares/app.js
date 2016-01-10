@@ -9,7 +9,7 @@ import {match} from 'react-router'
 import routes from '../../common/routes';
 import createMemoryHistory from 'history/lib/createMemoryHistory';
 import configureStore from '../../common/store/configureStore';
-import Root from '../../common/Root';
+import Root from '../../common/views/Root';
 
 const stateRegex = /window.__INITIAL_STATE__;/g;
 const htmlRegex = /\${html}/g;

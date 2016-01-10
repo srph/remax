@@ -4,7 +4,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import createHashHistory from 'history/lib/createHashHistory';
 import configureStore from '../common/store/configureStore';
-import Root from '../common/Root';
+import Root from '../common/views/Root';
 
 const history = createHashHistory({ queryKey: false });
 const store = configureStore(window.__INITIAL_STATE__);

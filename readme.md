@@ -99,6 +99,5 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [webpack](http://webpack.github.io) - Our script build tool. So we can `require`, and aliases.
 - [babel](http://babeljs.io) - So we can write ES6 code.
 - [karma](http://karma-runner.github.io/) - Our test runner; so we can run tests in different environments.
-- [mocha](http://mochajs.org) - Our test suite
-- [chai](chaijs.com) - Assertion library so we can do `expect`, and etc.
+- [tape](http://github.com/substack/tape/) - tap-producing test harness for node and browsers.
 - [sinon](sinonjs.org) - Spying / stubbing library for tests

@@ -100,3 +100,5 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [karma](http://karma-runner.github.io/) (`v0.13.15`)
 - [tape](http://github.com/substack/tape/) (`v4.4.0`)
 - [sinon](sinonjs.org) (`v1.17.2`)
+- [redux-devtools](https://github.com/gaearon/redux-devtools/) (`v3.0.0-beta-3`)
+- [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/) (`v1.0.0-beta-3`)

@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react';
-
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {click} from '../../modules/counter';
@@ -33,6 +32,16 @@ class HomeView extends React.Component {
   }
 }
 
-const mapStateToProps = state => state;
-const mapDispatchToProps = dispatch => ({ actions: bindActionCreators({ click }, dispatch) });
+function mapStateToProps (state) {
+  return {
+    counter: state.counter
+  };
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    actions: bindActionCreators({ click }, dispatch)
+  };
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(HomeView);

@@ -11,6 +11,7 @@
     "build:style": "sass common/styles/main.scss:public/dist/style.css",
     "watch:style": "sass --watch common/styles/main.scss:public/dist/style.css",
     "server": "node server",
+    "dev": "open public/index.html && npm-run-all --parallel watch:script watch:style",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },
   "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
@@ -50,6 +51,7 @@
     "karma-spec-reporter": "0.0.23",
     "karma-tap": "^1.0.3",
     "karma-webpack": "^1.7.0",
+    "npm-run-all": "^1.4.0",
     "phantomjs": "^1.9.18",
     "redux-devtools": "^3.0.0-beta-3",
     "redux-devtools-dock-monitor": "^1.0.0-beta-3",

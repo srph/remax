@@ -16,21 +16,14 @@ bundle install
 ```bash
 npm run start # runs build script, style, and server
 
-# compile assets
-npm run build:script
-npm run build:style
+# opens index file, watches / builds assets
+npm run dev
 
-# for continuous development,
-# run these commands instead of the above:
-npm run watch:script
-npm run watch:style
-
-# for production (minification)
-npm run prod:script
-npm run prod:style
-
-# run server
+# run server-side rendering
 npm run server
+
+# production-ready assets / run server
+npm start
 
 # run tests
 npm test # open up localhost:9876 afterwards

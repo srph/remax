@@ -67,6 +67,9 @@ The port which the server will be ran.
 
 This is a server-only config.
 
+#### `_REDUX_DEVTOOLS_`
+Condition which Redux Devtools will be enabled.
+
 #### `_SSR_`
 The variable to check if the environment is node. This is safer than deriving by checking variables available only to node.
 

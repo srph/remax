@@ -30,11 +30,15 @@ export default class Root extends React.Component {
                 {routes}
               </Router>
 
-            <DevTools />
+            {this.renderDevTools()}
           </div>
         </Provider>
       </div>
     );
+  }
+
+  renderDevTools() {
+    return _REDUX_DEVTOOLS_ ? <DevTools /> : null;
   }
 
   bootstrapReduxRouter() {

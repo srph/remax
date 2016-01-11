@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var s = JSON.stringify; // shortcu
+var p = JSON.parse; // shortcu
 
 var env = path.resolve(__dirname, '../../.env');
 require('dotenv').load({ path: env });
@@ -35,7 +36,8 @@ module.exports = {
       _CDN_: s(process.env.CDN),
       // Server-side rendering option is explicitly set to false.
       // This is set only to true for the server.
-      _SSR_: false
+      _SSR_: false,
+      _REDUX_DEVTOOLS_: p(process.env.REDUX_DEVTOOLS)
     })
   ],
   // http://rmurphey.com/blog/2015/07/20/karma-webpack-tape-code-coverage

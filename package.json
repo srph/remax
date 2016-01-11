@@ -51,7 +51,6 @@
     "karma-tap": "^1.0.3",
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.18",
-    "redbox-react": "^1.1.1",
     "redux-devtools": "^3.0.0-beta-3",
     "redux-devtools-dock-monitor": "^1.0.0-beta-3",
     "redux-devtools-log-monitor": "^1.0.0-beta-3",

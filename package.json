@@ -11,6 +11,10 @@
     "build:style": "sass common/styles/main.scss:public/dist/style.css",
     "watch:style": "sass --watch common/styles/main.scss:public/dist/style.css",
     "server": "node server",
+    "make-app-symlink": "cd node_modules && ln -ns ../ starter-kit",
+    "prewatch": "npm run make-app-symlink",
+    "postinstall": "npm run make-app-symlink",
+    "prebuild": "npm run make-app-symlink",
     "dev": "open public/index.html && npm-run-all --parallel watch:script watch:style",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },

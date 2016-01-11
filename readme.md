@@ -98,3 +98,6 @@ This is explicitly set to each config (e.g., server globals, webpack config).
 - [sinon](sinonjs.org) (`v1.17.2`)
 - [redux-devtools](https://github.com/gaearon/redux-devtools/) (`v3.0.0-beta-3`)
 - [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/) (`v1.0.0-beta-3`)
+
+## Alias
+You can use the `starter-kit` alias to `import` files. To change this, check the `make-app-symlink` script in `package.json`. This is useful for directories that are two levels away (`../../module/some-file` => `starter-kit/common/module/some-file`).

@@ -14,9 +14,6 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          // @todo
-          // add rewire
-          // https://github.com/speedskater/babel-plugin-rewire/issues/71
           presets: ['es2015', 'react', 'stage-0']
         }
       }

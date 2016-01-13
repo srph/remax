@@ -39,7 +39,7 @@ module.exports = function(config) {
     // Mocha config
     // https://github.com/karma-runner/karma-mocha
     client: {
-      tape: {
+      mocha: {
         reporter: 'html', // change Karma's debug.html to the mocha web reporter
         ui: 'bdd'
       }

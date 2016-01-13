@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "karma start build/test/karma.conf.js",
+    "test": "node_modules/karma/bin/karma start build/test/karma.conf.js",
     "build:script": "node_modules/.bin/webpack --config=build/webpack.config.js -v -d --display-error-details",
     "watch:script": "node_modules/.bin/webpack --config=build/webpack.config.js -w -v -d --display-error-details",
     "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js -p -v -d --display-error-details",

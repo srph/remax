@@ -6,13 +6,11 @@ require('dotenv').load({ path: __dirname + '/../../.env' });
 
 module.exports = {
   module: {
-    loaders: [
-      {
-        test: /\.(js|jsx|es6)$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
+    loaders: [{
+      test: /\.(js|jsx|es6)$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }]
   },
   resolve: {
     extensions: ['', '.js', '.json', '.jsx', '.es6']

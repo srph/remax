@@ -11,13 +11,11 @@ module.exports = {
     path: __dirname + '/../public/dist/'
   },
   module: {
-    loaders: [
-      {
-        test: /\.(js|jsx|es6)$/,
-        exclude: /node_modules/,
-        loader: 'babel'
-      }
-    ]
+    loaders: [{
+      test: /\.(js|jsx|es6)$/,
+      exclude: /node_modules/,
+      loader: 'babel'
+    }]
   },
   resolve: {
     extensions: ['', '.js', '.json', '.jsx', '.es6']

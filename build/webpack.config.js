@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var path = require('path');
 var s = JSON.stringify; // shortcut
 var p = JSON.parse; // shortcut
 
@@ -9,7 +8,7 @@ module.exports = {
   entry: './client/index.js',
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, '../public/dist/')
+    path: __dirname + '/../public/dist/'
   },
   module: {
     loaders: [

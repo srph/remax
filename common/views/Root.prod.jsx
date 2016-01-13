@@ -6,12 +6,7 @@ import {syncReduxAndRouter} from 'redux-simple-router';
 import routes from '../routes';
 import Helmet from 'react-helmet';
 
-export default class Root extends React.Component {
-  static propTypes = {
-    store: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
-  };
-
+class Root extends React.Component {
   constructor(props, context) {
     super(props, context);
 
@@ -36,3 +31,10 @@ export default class Root extends React.Component {
     syncReduxAndRouter(this.props.history, this.props.store);
   }
 }
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+};
+
+export default Root;

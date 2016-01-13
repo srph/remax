@@ -4,18 +4,10 @@ import {bindActionCreators} from 'redux';
 import {click} from '../../modules/counter';
 
 class HomeView extends React.Component {
-  static propTypes = {
-    actions: PropTypes.shape({
-      click: PropTypes.func.isRequired
-    }).isRequired,
-
-    counter: PropTypes.number.isRequired
-  };
-
   constructor(props) {
     super(props);
 
-    this.handleClick = ::this.handleClick;
+    this.handleClick = this.handleClick.bind(this);
   }
 
   render() {
@@ -31,6 +23,14 @@ class HomeView extends React.Component {
     this.props.actions.click();
   }
 }
+
+HomeView.propTypes = {
+  actions: PropTypes.shape({
+    click: PropTypes.func.isRequired
+  }).isRequired,
+
+  counter: PropTypes.number.isRequired
+};
 
 function mapStateToProps (state) {
   return {

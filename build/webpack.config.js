@@ -3,8 +3,7 @@ var path = require('path');
 var s = JSON.stringify; // shortcut
 var p = JSON.parse; // shortcut
 
-var env = path.resolve(__dirname, '../.env');
-require('dotenv').load({ path: env });
+require('dotenv').load({ path: __dirname + '/../.env' });
 
 module.exports = {
   entry: './client/index.js',

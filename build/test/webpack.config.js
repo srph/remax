@@ -1,10 +1,8 @@
 var webpack = require('webpack');
-var path = require('path');
 var s = JSON.stringify; // shortcu
 var p = JSON.parse; // shortcu
 
-var env = path.resolve(__dirname, '../../.env');
-require('dotenv').load({ path: env });
+require('dotenv').load({ path: __dirname + '/../../.env' });
 
 module.exports = {
   module: {

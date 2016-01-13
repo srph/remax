@@ -1,6 +1,4 @@
-var path = require('path');
-var env = path.resolve(__dirname, '../.env');
-require('dotenv').load({ path: env });
+require('dotenv').load({ path: __dirname + '/../.env' });
 
 global._API_ = process.env.API;
 global._ROOT_URI_ = process.env.ROOT_URI;

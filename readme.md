@@ -1,5 +1,5 @@
 # react-redux-starter-kit
-An opinionated starter kit.
+An opinionated react+redux starter kit.
 
 ## Installing
 Some requirements include:

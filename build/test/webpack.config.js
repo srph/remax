@@ -44,5 +44,7 @@ module.exports = {
   // Tell webpack how to deal with tape's `fs` dependency
   node: {
     fs: 'empty'
-  }
+  },
+  // https://github.com/webpack/karma-webpack#source-maps
+  devtool: 'inline-source-map'
 };

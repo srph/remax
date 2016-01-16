@@ -30,11 +30,6 @@ module.exports = {
       _REDUX_DEVTOOLS_: p(process.env.REDUX_DEVTOOLS)
     })
   ],
-  // http://rmurphey.com/blog/2015/07/20/karma-webpack-tape-code-coverage
-  // Tell webpack how to deal with tape's `fs` dependency
-  node: {
-    fs: 'empty'
-  },
   // https://github.com/webpack/karma-webpack#source-maps
   devtool: 'inline-source-map'
 };

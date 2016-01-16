@@ -71,12 +71,12 @@ A global variable for `process.env.NODE_ENV`.
 `true` when `process.env.NODE_ENV` is **not** set to `production`.
 
 #### `_API_`
-The URI of the your API.
+The URI of the API.
 
-Mainly used to concatenate your requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.
+Mainly used to concatenate the requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.
 
 #### `_IMG_`
-Path to your images folder.
+Path to the images folder.
 
 This can be used as such : ````${_IMG_}/cat.jpg````.
 

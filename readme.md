@@ -93,15 +93,5 @@ The variable to check if the environment is node. This is safer than deriving by
 
 This is explicitly set to each config (e.g., server globals, webpack config).
 
-#### `_IMG_`
-Path to your images folder.
-
-This can be used as such : ````${_IMG_}/cat.jpg````.
-
-#### `_SSR_`
-The variable to check if the environment is node. This is safer than deriving by checking variables available only to node.
-
-This is explicitly set to each config (e.g., server globals, webpack config).
-
 ## Alias
 You can use the `starter-kit` alias to `import` files. To change this, check the `make-app-symlink` script in `package.json`. This is useful for directories that are two levels away (`../../module/some-file` => `starter-kit/common/module/some-file`).

@@ -40,7 +40,6 @@ bundle install
 ## Development
 |command|description|
 |----|----|
-|`npm run start`|runs build script, style, and server|
 |`npm run dev`|opens index file, watches / builds assets|
 |`npm run server`|run server-side rendering|
 |`npm start`|production-ready assets / run server|

@@ -7,7 +7,7 @@ import configureStore from '../common/store/configureStore';
 import Root from '../common/views/Root';
 
 const history = createHashHistory({ queryKey: false });
-const store = configureStore(window.__INITIAL_STATE__);
+const store = configureStore(window.__INITIAL_STATE__, { history });
 const node = <Root history={history} store={store} />;
 const $target = document.getElementById('mount');
 

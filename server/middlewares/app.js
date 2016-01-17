@@ -16,7 +16,7 @@ const htmlRegex = /\${html}/g;
 
 export default function *appMiddleware() {
   const history = createMemoryHistory();
-  const store = configureStore();
+  const store = configureStore(null, { history });
 
   match({ routes, location: this.request.url }, (err, redirect, props) => {
     if ( err ) {

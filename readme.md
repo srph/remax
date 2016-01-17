@@ -26,7 +26,7 @@ An opinionated react+redux starter kit.
 ## FAQ
 - Where's my `actions`, `reducers`, and `constants`? This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
 
-## Installing
+## Getting Started
 Some requirements include:
 - [node](nodejs.org) / [npm](npmjs.com)
 - [ruby](ruby-lang.org) / [gems](rubygems.org) / [bundler](bundler.io)
@@ -38,20 +38,13 @@ bundle install
 ```
 
 ## Development
-```bash
-npm run start # runs build script, style, and server
-
-# opens index file, watches / builds assets
-npm run dev
-
-# run server-side rendering
-npm run server
-
-# production-ready assets / run server
-npm start
-
-# run tests
-npm test # open up localhost:9876 afterwards
+|command|description|
+|----|----|
+|`npm run start`|runs build script, style, and server|
+|`npm run dev`|opens index file, watches / builds assets|
+|`npm run server`|run server-side rendering|
+|`npm start`|production-ready assets / run server|
+|`npm test`|open up localhost:9876 afterwards|
 ```
 
 ## Configuration

@@ -45,7 +45,6 @@ bundle install
 |`npm run server`|run server-side rendering|
 |`npm start`|production-ready assets / run server|
 |`npm test`|open up localhost:9876 afterwards|
-```
 
 ## Configuration
 This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.

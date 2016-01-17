@@ -40,10 +40,13 @@ bundle install
 ## Development
 |command|description|
 |----|----|
+|`npm run watch:script`|watch for file changes and compile scripts|
+|`npm run watch:style`|watch for file changes and compile stylesheets|
 |`npm run dev`|opens index file, watches / builds assets|
 |`npm run server`|run server-side rendering|
 |`npm start`|production-ready assets / run server|
-|`npm test`|open up localhost:9876 afterwards|
+|`npm watch:test`|watches for file changes and runs test|
+|`npm test`|run tests|
 
 ## Configuration
 This starter kit uses a [dotenv](https://www.npmjs.com/package/dotenv-style) configuration. To start, simply copy `.env.example` to `.env`.

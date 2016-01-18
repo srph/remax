@@ -61,7 +61,7 @@ We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
 |`process.env.PORT`|The port which the server will be ran. This is a server-only config.|
 |`process.env.REDUX_DEVTOOLS`|Condition which Redux Devtools will be enabled.|
 
-**Gotchas**: To set a config to `false`, [leave it empty](https://github.com/motdotla/dotenv/issues/74#issuecomment-113287892.
+**Gotchas**: To set a config to `false`, [leave it empty](https://github.com/motdotla/dotenv/issues/74#issuecomment-113287892).
 ```bash
 # wrong
 REDUX_DEVTOOLS=false

@@ -64,7 +64,6 @@ By convention, env configs are surrounded with underscores (`_`) when used throu
 |`_IMG_`|Path to the images folder. This can be used as such : ````${_IMG_}/cat.jpg````.|
 |`_PORT_`|The port which the server will be ran. This is a server-only config.
 |`_REDUX_DEVTOOLS_`|Condition which Redux Devtools will be enabled.|
-|`_SSR_`|The variable to check if the environment is node. This is safer than deriving by checking variables available only to node. This is explicitly set to each config (e.g., server globals, webpack config).|
 
 ## Alias
 You can use the `starter-kit` alias to `import` files. To change this, check the `make-app-symlink` script in `package.json`. This is useful for directories that are two levels away (`../../module/some-file` => `starter-kit/common/module/some-file`).

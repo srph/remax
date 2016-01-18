@@ -33,7 +33,7 @@ class Root extends React.Component {
   }
 
   renderDevTools() {
-    return _REDUX_DEVTOOLS_ ? <DevTools /> : null;
+    return process.env.REDUX_DEVTOOLS ? <DevTools /> : null;
   }
 
   bootstrapReduxRouter() {

@@ -1,6 +1,6 @@
 // Import all utils that needs to be initialized
 
-if ( _DEV_ ) {
+if ( process.env.NODE_ENV !== 'production' ) {
   require('axios-response-logger');
 }
 

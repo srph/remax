@@ -8,5 +8,5 @@ app.use(koaStaticMiddleware);
 app.use(initCookieMiddleware);
 app.use(appMiddleware);
 
-app.listen(_PORT_);
-console.log(`Listening to port ${_PORT_}`);
+app.listen(process.env.PORT);
+console.log(`Listening to port ${process.env.PORT}`);

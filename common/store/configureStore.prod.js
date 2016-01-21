@@ -9,7 +9,7 @@ import {syncHistory} from 'redux-simple-router';
  * @param {object} drivers Used to inject dependencies
  * @param {object} drivers.history History instance
  */
-export default function configureStore(initialState, history) {
+export default function configureStore(initialState, {history}) {
   const reduxRouterMiddleware = syncHistory(history);
   const createStoreWithMiddleware = applyMiddleware(
     thunk,

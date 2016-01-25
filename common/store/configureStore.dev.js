@@ -20,7 +20,9 @@ export default function configureStore(initialState, {history}) {
   const store = finalCreateStore(reducers, initialState);
 
   // Required for redux-simple-router to replay actions from devtools to work
-  reduxRouterMiddleware.listenForReplays(store);
+  if ( process.env.REDUX_DEVTOOLS ) {
+    reduxRouterMiddleware.listenForReplays(store);
+  }
 
   instance.set(store);
 

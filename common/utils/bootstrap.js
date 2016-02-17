@@ -4,4 +4,4 @@ if ( process.env.NODE_ENV !== 'production' ) {
   require('axios-response-logger');
 }
 
-import './axios/interceptors/concatBaseUrl';
+require('axios-base-url')(process.env.API);

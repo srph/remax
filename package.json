@@ -40,7 +40,8 @@
     "redux": "^3.0.4",
     "redux-simple-router": "^2.0.3",
     "redux-thunk": "^1.0.0",
-    "url-join": "0.0.1"
+    "url-join": "0.0.1",
+    "axios-base-url": "^0.2.0"
   },
   "devDependencies": {
     "babel": "^6.1.5",

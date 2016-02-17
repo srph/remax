@@ -66,6 +66,7 @@
     "redux-devtools-dock-monitor": "^1.0.0-beta-3",
     "redux-devtools-log-monitor": "^1.0.0-beta-3",
     "sinon": "^1.17.2",
-    "webpack": "^1.12.4"
+    "webpack": "^1.12.4",
+    "dotenv-autoload": "^0.1.3"
   }
 }

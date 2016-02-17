@@ -64,6 +64,7 @@
     "redux-devtools-dock-monitor": "^1.0.0-beta-3",
     "redux-devtools-log-monitor": "^1.0.0-beta-3",
     "sinon": "^1.17.2",
-    "webpack": "^1.12.4"
+    "webpack": "^1.12.4",
+    "babel-plugin-transform-object-rest-spread": "^6.1.18"
   }
 }

@@ -46,7 +46,7 @@ bundle install
 |`npm run server`|run server-side rendering|
 |`npm start`|production-ready assets / run server|
 |`npm watch:test`|watches for file changes and runs test|
-|`npm test`|run tests|
+|`npm test`|run tests (single run)|
 
 ## Configuration
 We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.

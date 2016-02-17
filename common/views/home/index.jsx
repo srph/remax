@@ -11,6 +11,8 @@ class HomeView extends React.Component {
   }
 
   render() {
+    console.log(this.props);
+
     return (
       <div>
         Clicks: {this.props.counter}
@@ -33,9 +35,7 @@ HomeView.propTypes = {
 };
 
 function mapStateToProps (state) {
-  return {
-    counter: state.counter
-  };
+  return state;
 }
 
 function mapDispatchToProps (dispatch) {

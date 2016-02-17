@@ -9,6 +9,10 @@ module.exports = {
       test: /\.(js|jsx|es6)$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
+    }, {
+      // https://github.com/lecstor/react-startup-starter/blob/master/karma.conf.js#L55
+      test: /sinon\.js$/,
+      loader: 'imports?define=>false,require=>false'
     }]
   },
   resolve: {

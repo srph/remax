@@ -8,14 +8,14 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader'
     }, {
-      // https://github.com/lecstor/react-startup-starter/blob/master/karma.conf.js#L55
+      // https://github.com/webpack/webpack/issues/177#issuecomment-185718237
       test: /sinon\.js$/,
       loader: 'imports?define=>false,require=>false'
     }]
   },
   resolve: {
     extensions: ['', '.js', '.json', '.jsx', '.es6'],
-    alias: { sinon: 'sinon/pkg/sinon' } // // https://github.com/airbnb/enzyme/issues/47
+    alias: { sinon: 'sinon/pkg/sinon' } // https://github.com/webpack/webpack/issues/177#issuecomment-185718237
   },
   // https://github.com/webpack/karma-webpack#source-maps
   devtool: 'inline-source-map',

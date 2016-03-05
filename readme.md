@@ -27,9 +27,6 @@ Server-side rendering was removed with the recent commits because:
 - [redux-devtools](https://github.com/gaearon/redux-devtools/) (`v3.0.0-beta-3`)
 - [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/) (`v1.0.0-beta-3`)
 
-## FAQ
-Checkout the [FAQ page](faq.md)
-
 ## Getting Started
 To get your fingers typing asap:
 - [Install requirements, clone repository, and install dependencies](#installing).
@@ -77,3 +74,6 @@ REDUX_DEVTOOLS=
 
 ## Alias
 [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases.
+
+## FAQ
+Checkout the [FAQ page](faq.md)

@@ -71,4 +71,4 @@ REDUX_DEVTOOLS=
 ```
 
 ## Alias
-We are using [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) for our aliases.
+[babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases.

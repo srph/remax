@@ -1,5 +1,5 @@
 # react-redux-starter-kit
-An opinionated react+redux starter kit.
+An opinionated non-universal react+redux starter kit.
 
 ## Libraries
 **Mainly**:
@@ -38,9 +38,7 @@ npm install
 |----|----|
 |`npm run watch:script`|watch for file changes and compile scripts|
 |`npm run watch:style`|watch for file changes and compile stylesheets|
-|`npm run dev`|runs `watch:script` and `watch:style`|
-|`npm run server`|run server-side rendering|
-|`npm start`|production-ready assets / run server|
+|`npm start`|runs `watch:script` and `watch:style`|
 |`npm watch:test`|watches for file changes and runs test|
 |`npm test`|run tests (single run)|
 

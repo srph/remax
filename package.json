@@ -8,9 +8,7 @@
     "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js -p -v -d --display-error-details",
     "build:style": "node-sass common/styles/style.scss -o public/dist",
     "watch:style": "npm run build:style && node-sass -w common/styles/style.scss -o public/dist",
-    "server": "node server",
-    "dev": "open public/index.html && npm-run-all --parallel watch:script watch:style",
-    "start": "npm run build:style && npm run prod:script && npm run server"
+    "start": "echo 'Please run a web-server to serve `public/` directory' && npm-run-all --parallel watch:script watch:style",
   },
   "dependencies": {
     "axios": "^0.7.0",

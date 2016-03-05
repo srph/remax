@@ -1,7 +1,7 @@
 require('dotenv-autoload');
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './src/index.js',
   output: {
     filename: 'script.js',
     path: __dirname + '/../public/dist/'

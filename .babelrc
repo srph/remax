@@ -4,7 +4,7 @@
     "transform-inline-environment-variables",
     "transform-object-rest-spread",
     ["module-alias", [
-      { "src": "./common/components", "expose": "app/components" }
+      { "src": "./src/components", "expose": "app/components" }
     ]]
   ]
 }

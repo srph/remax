@@ -31,21 +31,18 @@ Server-side rendering was removed with the recent commits because:
 Checkout the [FAQ page](faq.md)
 
 ## Getting Started
+To get your fingers typing asap:
+- [Install requirements, clone repository, and install dependencies](#installing).
+- [Setup config](#configuration).
+- [Run build script](#development).
+
+## Installing
 You are required to install [node `>=4`](nodejs.org) / [npm `>=2`](npmjs.com).
 
 Afterwards, clone, and then run the following to install the dependencies:
 ```bash
 npm install
 ```
-
-## Development
-|command|description|
-|----|----|
-|`npm run watch:script`|watch for file changes and compile scripts|
-|`npm run watch:style`|watch for file changes and compile stylesheets|
-|`npm start`|runs `watch:script` and `watch:style`|
-|`npm watch:test`|watches for file changes and runs test|
-|`npm test`|run tests (single run)|
 
 ## Configuration
 We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
@@ -68,6 +65,15 @@ REDUX_DEVTOOLS=false
 # correct
 REDUX_DEVTOOLS=
 ```
+
+## Development
+|command|description|
+|----|----|
+|`npm run watch:script`|watch for file changes and compile scripts|
+|`npm run watch:style`|watch for file changes and compile stylesheets|
+|`npm start`|runs `watch:script` and `watch:style`|
+|`npm watch:test`|watches for file changes and runs test|
+|`npm test`|run tests (single run)|
 
 ## Alias
 [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases.

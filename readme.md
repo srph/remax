@@ -16,7 +16,6 @@ Server-side rendering was removed with the recent commits because:
 - [redux-thunk](http://github.com/gaearon/redux-thunk) (`v1.0.0`)
 - [classnames](http://github.com/JedWatson/classnames) (`v2.2.0`)
 - [axios](https://github.com/mzabriskie/axios) (`v0.7.0`)
-- [koa](http://koajs.com) (`v1.1.2`)
 
 **Development**:
 - [webpack](http://webpack.github.io)

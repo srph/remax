@@ -1,6 +1,7 @@
 ## FAQ
+This page contains answers to Frequenly Asked Questions.
 
-Back to the [documentation](readme.md).
+<sub>[Back to the documentation](readme.md).</sub>
 
 ### Where's my `actions`, `reducers`, and `constants`?
 This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).

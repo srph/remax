@@ -6,7 +6,7 @@ import {hashHistory} from 'react-router';
 import configureStore from './store/configureStore';
 import Root from './views/Root';
 
-const store = configureStore(window.__INITIAL_STATE__);
+const store = configureStore();
 const node = <Root history={hashHistory} store={store} />;
 const $target = document.getElementById('mount');
 

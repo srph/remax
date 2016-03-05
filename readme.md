@@ -68,4 +68,4 @@ REDUX_DEVTOOLS=
 ```
 
 ## Alias
-You can use the `starter-kit` alias to `import` files. To change this, check the `make-app-symlink` script in `package.json`. This is useful for directories that are two levels away (`../../module/some-file` => `starter-kit/common/module/some-file`).
+We are using [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) for our aliases.

@@ -1,8 +1,5 @@
 {
   "name": "react-redux-starter-kit",
-  "version": "1.0.0",
-  "description": "An opinionated react+redux starter kit.",
-  "main": "index.js",
   "scripts": {
     "test": "node_modules/karma/bin/karma start build/test/karma.conf.js --single-run",
     "watch:test": "node_modules/karma/bin/karma start build/test/karma.conf.js",
@@ -15,8 +12,6 @@
     "dev": "open public/index.html && npm-run-all --parallel watch:script watch:style",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },
-  "author": "Kier Borromeo <seraphipod@gmail.com> (http://srph.github.io)",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.7.0",
     "axios-response-logger": "^0.1.0",

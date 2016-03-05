@@ -29,7 +29,7 @@ Server-side rendering was removed with the recent commits because:
 - [redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/) (`v1.0.0-beta-3`)
 
 ## FAQ
-- Where's my `actions`, `reducers`, and `constants`? This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
+Checkout the [FAQ page](faq.md)
 
 ## Getting Started
 You are required to install [node `>=4`](nodejs.org) / [npm `>=2`](npmjs.com).

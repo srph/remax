@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 import {Router} from 'react-router';
 import routes from '../routes';
 import Helmet from 'react-helmet';
-import DevTools from '../components/DevTools';
+import DevTools from 'app/components/DevTools';
 
 class Root extends React.Component {
   render() {

@@ -12,10 +12,6 @@
     "build:style": "node-sass common/styles/style.scss -o public/dist",
     "watch:style": "npm run build:style && node-sass -w common/styles/style.scss -o public/dist",
     "server": "node server",
-    "make-app-symlink": "rm -f node_modules/starter-kit 2> /dev/null && cd node_modules && ln -sfn ../ starter-kit",
-    "prewatch": "npm run make-app-symlink",
-    "postinstall": "npm run make-app-symlink",
-    "prebuild": "npm run make-app-symlink",
     "dev": "open public/index.html && npm-run-all --parallel watch:script watch:style",
     "start": "npm run build:style && npm run prod:script && npm run server"
   },
@@ -69,6 +65,7 @@
     "redux-devtools-log-monitor": "^1.0.0-beta-3",
     "sinon": "^1.17.2",
     "webpack": "^1.12.4",
-    "dotenv-autoload": "^0.1.3"
+    "dotenv-autoload": "^0.1.3",
+    "babel-plugin-module-alias": "^1.2.0"
   }
 }

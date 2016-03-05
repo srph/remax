@@ -27,7 +27,7 @@ Server-side rendering was removed with the recent commits because:
 |[karma](http://karma-runner.github.io/)|`v0.13.15`|
 |[mocha](http://mochajs.org)|`v2.3.4`|
 |[chai](http://chaijs.com)|`v3.4.1`|
-|[sinon](sinonjs.org)|`v1.17.2`|
+|[sinon](http://sinonjs.org)|`v1.17.2`|
 |[enzyme](http://airbnb.io/enzyme)|`v2.0.0`|
 |[redux-devtools](https://github.com/gaearon/redux-devtools/)|`v3.0.0-beta-3`|
 |[redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/)|`v1.0.0-beta-3`|

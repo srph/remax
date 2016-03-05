@@ -6,11 +6,11 @@ import thunk from 'redux-thunk';
 /**
  * @param {object} initialState
  */
-export default function configureStore(initialState) {
+export default function configureStore() {
   const reduxRouterMiddleware = syncHistory(history);
   const createStoreWithMiddleware = applyMiddleware(thunk);
   const finalCreateStore = createStoreWithMiddleware(createStore);
-  const store = finalCreateStore(reducers, initialState);
+  const store = finalCreateStore(reducers);
 
   instance.set(store);
 

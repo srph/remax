@@ -7,13 +7,13 @@ import DevTools from '../components/DevTools';
 /**
  * @param {object} initialState
  */
-export default function configureStore(initialState) {
+export default function configureStore() {
   const createStoreWithMiddleware = compose(
     applyMiddleware(thunk),
     DevTools.instrument()
   );
   const finalCreateStore = createStoreWithMiddleware(createStore);
-  const store = finalCreateStore(reducers, initialState);
+  const store = finalCreateStore(reducers);
 
   instance.set(store);
 

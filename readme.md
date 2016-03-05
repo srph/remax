@@ -4,10 +4,9 @@ An opinionated react+redux starter kit.
 ## Libraries
 **Mainly**:
 - [react](http://facebook.github.io/react) (`v0.14.2`)
-- [react-router](http://rackt.github.io/react-router) (`v1.0.0`)
+- [react-router](http://rackt.github.io/react-router) (`v2.0.0`)
 - [redux](http://rackt.github.io/redux) (`v3.0.4`)
 - [react-redux](http://github.com/gaearon/react-redux) (`v4.0.0`)
-- [redux-simple-router](http://rackt.github.io/redux) (`v2.x`)
 - [redux-thunk](http://github.com/gaearon/redux-thunk) (`v1.0.0`)
 - [classnames](http://github.com/JedWatson/classnames) (`v2.2.0`)
 - [axios](https://github.com/mzabriskie/axios) (`v0.7.0`)

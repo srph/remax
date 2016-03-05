@@ -22,7 +22,6 @@ Server-side rendering was removed with the recent commits because:
 
 |dependency|version|
 |----|----|
-|[node-sass](https://github.com/sass/node-sass)|(`v3.4.2`)|
 |[webpack](http://webpack.github.io)|`1.12.4`|
 |[babel](http://babeljs.io)|`v6.1.5`|
 |[karma](http://karma-runner.github.io/)|`v0.13.15`|
@@ -32,6 +31,9 @@ Server-side rendering was removed with the recent commits because:
 |[enzyme](http://airbnb.io/enzyme)|`v2.0.0`|
 |[redux-devtools](https://github.com/gaearon/redux-devtools/)|`v3.0.0-beta-3`|
 |[redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/)|`v1.0.0-beta-3`|
+|[node-sass](https://github.com/sass/node-sass)|(`v3.4.2`)|
+|[autoprefixer](https://github.com/postcss/autoprefixer)|``|
+|[cssnano](http://cssnano.co/)|``|
 
 ## Getting Started
 To get your fingers typing asap:

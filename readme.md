@@ -80,8 +80,7 @@ REDUX_DEVTOOLS=
 |`npm watch:test`|watches for file changes and runs test|
 |`npm test`|run tests (single run)|
 
-## Alias
-[babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases.
-
-## FAQ
-Checkout the [FAQ page](faq.md)
+## 101
+- This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
+- [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases.
+- The bootstrap file (imported in [`src/index.js#L2`](src/index.js#L2)) is useful for libraries that need to be initialized (e.g., axios interceptors, et al.).

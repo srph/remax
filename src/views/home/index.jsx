@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {click} from '../../modules/counter';
+import {click} from 'app/modules/counter';
 
 class HomeView extends React.Component {
   constructor(props) {

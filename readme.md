@@ -1,12 +1,6 @@
 # react-redux-starter-kit
 An opinionated non-universal react+redux starter kit.
 
-## No longer isomorphic/universal?
-Server-side rendering was removed with the recent commits because:
-- I don't need server-side rendering in most cases.
-- I only use client-side rendering in most cases.
-- It bloats the starter kit.
-
 ## Libraries
 |dependency|version|
 |----|----|

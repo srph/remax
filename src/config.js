@@ -2,7 +2,7 @@ export default {
   // ==============================
   // The API Host
   // ==============================
-  api: 'http://example.com',
+  api: process.env.API || 'http://example.com',
 
   // ==============================
   // Assets
@@ -11,7 +11,7 @@ export default {
   // Configuration for assets and paths
   //
   assets: {
-    images: '/img'
+    images: process.env.ASSET_IMAGE_PATH || '/img'
   },
 
   // ==============================

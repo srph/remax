@@ -15,7 +15,6 @@
   "dependencies": {
     "axios": "^0.7.0",
     "babel-polyfill": "^6.1.19",
-    "babel-register": "^6.2.0",
     "classnames": "^2.2.0",
     "cookie-machine": "^0.1.1",
     "react": "^0.14.2",

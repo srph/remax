@@ -1,5 +1,5 @@
 import 'babel-polyfill';
-import './utils/bootstrap';
+import './bootstrap';
 import React from 'react';
 import {render} from 'react-dom';
 import history from './history';

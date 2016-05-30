@@ -44,15 +44,13 @@ npm install
 ```
 
 ## Configuration
-We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
+Most configuration is stored on `src/config`. For environment configs, we use [dotenv](https://www.npmjs.com/package/dotenv-style).
 
 <sub>*Note*: If you don't have any `.env` file in the project root directory, run this: `cp .env.example .env`.</sub>
 
 |config|description|
 |----|----|
 |`process.env.NODE_ENV`|Environment.|
-|`process.env.API`|The URI of the API. Mainly used to concatenate the requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.|
-|`process.env.IMG`|Path to the images folder. This can be used as such : ````${_IMG_}/cat.jpg````.|
 |`process.env.REDUX_DEVTOOLS`|Condition which Redux Devtools will be enabled.|
 
 **Gotchas**: To set a config to `false`, [leave it empty](https://github.com/motdotla/dotenv/issues/74#issuecomment-113287892).

@@ -82,5 +82,5 @@ REDUX_DEVTOOLS=
 
 ## 101
 - This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
-- [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases. Everything in `src` is aliased under `app` (e.g., `import from 'app/components/'). You may configure this in [`.babelrc`](.babelrc).
+- [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases. Everything in `src` is aliased under `app` (e.g., `import from 'app/components/'`). You may configure this in [`.babelrc`](.babelrc).
 - The bootstrap file (imported in [`src/index.js#L2`](src/index.js#L2)) is useful for libraries that need to be initialized (e.g., axios interceptors, et al.).

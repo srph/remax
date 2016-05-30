@@ -26,8 +26,8 @@ An opinionated non-universal react+redux starter kit.
 |[redux-devtools](https://github.com/gaearon/redux-devtools/)|`v3.0.0-beta-3`|
 |[redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/)|`v1.0.0-beta-3`|
 |[node-sass](https://github.com/sass/node-sass)|`v3.4.2`|
-|[autoprefixer](https://github.com/postcss/autoprefixer)|``|
-|[cssnano](http://cssnano.co/)|``|
+|[autoprefixer](https://github.com/postcss/autoprefixer)|&nbsp;|
+|[cssnano](http://cssnano.co/)|&nbsp;|
 
 ## Getting Started
 To get your fingers typing asap:

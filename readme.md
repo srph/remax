@@ -2,32 +2,13 @@
 An opinionated non-universal react+redux starter kit.
 
 ## Libraries
-|dependency|version|
-|----|----|
-|[react](http://facebook.github.io/react)|(`v0.14.2`)|
-|[react-router](http://rackt.github.io/react-router)|(`v2.0.0`)|
-|[redux](http://rackt.github.io/redux)|(`v3.0.4`)|
-|[react-redux](http://github.com/gaearon/react-redux)|(`v4.0.0`)|
-|[redux-thunk](http://github.com/gaearon/redux-thunk)|(`v1.0.0`)|
-|[classnames](http://github.com/JedWatson/classnames)|(`v2.2.0`)|
-|[axios](https://github.com/mzabriskie/axios)|(`v0.7.0`)|
-
-**Development**:
-
-|dependency|version|
-|----|----|
-|[webpack](http://webpack.github.io)|`1.12.4`|
-|[babel](http://babeljs.io)|`v6.1.5`|
-|[karma](http://karma-runner.github.io/)|`v0.13.15`|
-|[mocha](http://mochajs.org)|`v2.3.4`|
-|[chai](http://chaijs.com)|`v3.4.1`|
-|[sinon](http://sinonjs.org)|`v1.17.2`|
-|[enzyme](http://airbnb.io/enzyme)|`v2.0.0`|
-|[redux-devtools](https://github.com/gaearon/redux-devtools/)|`v3.0.0-beta-3`|
-|[redux-devtools-log-monitor](https://github.com/gaearon/redux-devtools/)|`v1.0.0-beta-3`|
-|[node-sass](https://github.com/sass/node-sass)|`v3.4.2`|
-|[autoprefixer](https://github.com/postcss/autoprefixer)|&nbsp;|
-|[cssnano](http://cssnano.co/)|&nbsp;|
+- [React](https://github.com/facebook/react)
+- [React Router](https://github.com/reactjs/react-router)
+- [Redux](https://github.com/reactjs/redux)
+- [Axios](https://github.com/mzabriskie/axios)
+- Build: [Babel](babeljs.io) / [Webpack](https://webpack.github.io/)
+- Testing: [Karma](https://karma-runner.github.io/) / [Mocha](http://mochajs.org) / [Chai](http://chaijs.com) / [Sinon](http://sinonjs.org/) / [Enzyme](http://airbnb.io/enzyme/docs/api/shallow.html)
+- Styling: [Sass](https://github.com/sass/node-sass) / [Autoprefixer](https://github.com/postcss/autoprefixer) / [CSS Nano](https://github.com/ben-eb/cssnano)
 
 ## Getting Started
 To get your fingers typing asap:

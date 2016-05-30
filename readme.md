@@ -25,7 +25,7 @@ npm install
 ```
 
 ## Configuration
-Most configuration is stored on `src/config`. For environment configs, we use [dotenv](https://www.npmjs.com/package/dotenv-style).
+Most configuration is stored on [`src/config.js`](src/config.js). For environment configs, we use [dotenv](https://www.npmjs.com/package/dotenv-style).
 
 <sub>*Note*: If you don't have any `.env` file in the project root directory, run this: `cp .env.example .env`.</sub>
 

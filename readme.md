@@ -31,9 +31,9 @@ An opinionated non-universal react+redux starter kit.
 
 ## Getting Started
 To get your fingers typing asap:
-- [Install requirements, clone repository, and install dependencies](#installing).
-- [Setup config](#configuration).
-- [Run build script](#development).
+- [Install requirements, clone repository, and install dependencies](#installing)
+- [Setup config](#configuration)
+- [Run build script](#development)
 
 ## Installing
 You are required to install [node `>=4`](nodejs.org) / [npm `>=2`](npmjs.com).
@@ -57,13 +57,6 @@ We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
 |`process.env.REDUX_DEVTOOLS`|Condition which Redux Devtools will be enabled.|
 
 **Gotchas**: To set a config to `false`, [leave it empty](https://github.com/motdotla/dotenv/issues/74#issuecomment-113287892).
-```bash
-# wrong
-REDUX_DEVTOOLS=false
-
-# correct
-REDUX_DEVTOOLS=
-```
 
 ## Development
 |command|description|

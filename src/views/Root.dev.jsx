@@ -13,7 +13,7 @@ class Root extends React.Component {
 
         <Provider store={this.props.store}>
           <div>
-              <Router history={this.props.history}>
+              <Router history={this.props.history} render={applyRouterMiddleware(scroll())}>
                 {routes}
               </Router>
 

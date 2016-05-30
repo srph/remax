@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import {Provider} from 'react-redux';
-import {Router} from 'react-router';
+import {Router, applyRouterMiddleware} from 'react-router';
+import scroll from 'react-router-scroll';
 import Helmet from 'react-helmet';
 import routes from '../routes';
 import config from '../config';
@@ -12,7 +13,7 @@ class Root extends React.Component {
         <Helmet titleTemplate={`${config.app.title} - %s`} />
 
         <Provider store={this.props.store}>
-          <Router history={this.props.history}>
+          <Router history={this.props.history} render={applyRouterMiddleware(scroll())}>
             {routes}
           </Router>
         </Provider>

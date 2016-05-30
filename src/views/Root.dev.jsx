@@ -6,6 +6,11 @@ import Helmet from 'react-helmet';
 import DevTools from 'app/components/DevTools';
 
 class Root extends React.Component {
+  static propTypes = {
+    store: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
   render() {
     return (
       <div>
@@ -28,10 +33,5 @@ class Root extends React.Component {
     return process.env.REDUX_DEVTOOLS ? <DevTools /> : null;
   }
 }
-
-Root.propTypes = {
-  store: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
-};
 
 export default Root;

@@ -3,6 +3,7 @@
   plugins: [
     "transform-inline-environment-variables",
     "transform-object-rest-spread",
+    "transform-class-properties",
     ["module-alias", [
       { "src": "./src", "expose": "app" }
     ]]

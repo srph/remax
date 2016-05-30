@@ -7,6 +7,11 @@ import routes from '../routes';
 import config from '../config';
 
 class Root extends React.Component {
+  static propTypes = {
+    store: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired
+  };
+
   render() {
     return (
       <div>
@@ -21,10 +26,5 @@ class Root extends React.Component {
     );
   }
 }
-
-Root.propTypes = {
-  store: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
-};
 
 export default Root;

@@ -4,11 +4,13 @@ import {bindActionCreators} from 'redux';
 import {click} from 'app/modules/counter';
 
 class HomeView extends React.Component {
-  constructor(props) {
-    super(props);
+  static propTypes = {
+    actions: PropTypes.shape({
+      click: PropTypes.func.isRequired
+    }).isRequired,
 
-    this.handleClick = this.handleClick.bind(this);
-  }
+    counter: PropTypes.number.isRequired
+  };
 
   render() {
     console.log(this.props);
@@ -16,32 +18,20 @@ class HomeView extends React.Component {
     return (
       <div>
         Clicks: {this.props.counter}
-        <button onClick={this.handleClick}>Click!</button>
+        <button onClick={this.props.actions.click}>Click!</button>
       </div>
     );
   }
-
-  handleClick() {
-    this.props.actions.click();
-  }
 }
 
-HomeView.propTypes = {
-  actions: PropTypes.shape({
-    click: PropTypes.func.isRequired
-  }).isRequired,
-
-  counter: PropTypes.number.isRequired
-};
-
-function mapStateToProps (state) {
+function mapState(state) {
   return state;
 }
 
-function mapDispatchToProps (dispatch) {
+function mapDispatch(dispatch) {
   return {
     actions: bindActionCreators({ click }, dispatch)
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeView);
+export default connect(mapState, mapDispatch)(HomeView);

@@ -53,7 +53,6 @@ We use [dotenv](https://www.npmjs.com/package/dotenv-style) configuration.
 |`process.env.NODE_ENV`|Environment.|
 |`process.env.API`|The URI of the API. Mainly used to concatenate the requests with a base URI in `common/utils/axios/interceptors/concatBaseUrl`.|
 |`process.env.IMG`|Path to the images folder. This can be used as such : ````${_IMG_}/cat.jpg````.|
-|`process.env.PORT`|The port which the server will be ran. This is a server-only config.|
 |`process.env.REDUX_DEVTOOLS`|Condition which Redux Devtools will be enabled.|
 
 **Gotchas**: To set a config to `false`, [leave it empty](https://github.com/motdotla/dotenv/issues/74#issuecomment-113287892).

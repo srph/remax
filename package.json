@@ -18,7 +18,7 @@
     "babel-polyfill": "^6.1.19",
     "classnames": "^2.2.0",
     "cookie-machine": "^0.1.1",
-    "history": "^2.1.1",
+    "history": "^2.1.2",
     "node-sass": "^3.4.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",

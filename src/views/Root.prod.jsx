@@ -3,8 +3,8 @@ import {Provider} from 'react-redux';
 import {Router, applyRouterMiddleware} from 'react-router';
 import scroll from 'react-router-scroll';
 import Helmet from 'react-helmet';
-import routes from '../routes';
-import config from '../config';
+import routes from 'app/routes';
+import config from 'app/config';
 
 class Root extends React.Component {
   static propTypes = {

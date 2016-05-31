@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import {Provider} from 'react-redux';
 import {Router, applyRouterMiddleware} from 'react-router';
+import scroll from 'react-router-scroll';
 import Helmet from 'react-helmet';
 import DevTools from 'app/components/DevTools';
 import routes from 'app/routes';

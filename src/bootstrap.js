@@ -1,10 +1,8 @@
-// Import all utils that needs to be initialized
-import config from './config';
+// ==================================================
+// Bootstrapping
+// ==================================================
+// You may place all boilerplate code of other
+// libraries to initialize them before the app boots
+// ==================================================
 
-if ( process.env.NODE_ENV !== 'production' ) {
-  global.onunhandledrejection = function({reason}) {
-    console.error(reason, reason.stack);
-  }
-}
-
-require('axios-base-url')(config.api);
+//

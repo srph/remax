@@ -4,14 +4,6 @@ import {bindActionCreators} from 'redux';
 import {click} from 'app/modules/counter';
 
 class HomeView extends React.Component {
-  static propTypes = {
-    actions: PropTypes.shape({
-      click: PropTypes.func.isRequired
-    }).isRequired,
-
-    counter: PropTypes.number.isRequired
-  };
-
   render() {
     console.log(this.props);
 

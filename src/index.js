@@ -1,13 +1,15 @@
-import 'babel-polyfill';
+// ==================================================
+// Main Client File
+// ==================================================
+// This file imports the bootstrap file, runs the
+// boilerplate required to initialize the application
+// ==================================================
+
 import './bootstrap';
 import React from 'react';
-import {render} from 'react-dom';
-import history from './history';
-import configureStore from './store/configureStore';
+import ReactDOM from 'react-dom';
 import Root from './views/Root';
 
-const store = configureStore();
-const node = <Root history={history} store={store} />;
+const node = <Root />;
 const $target = document.getElementById('mount');
-
-render(node, $target);
+ReactDOM.render(node, $target);

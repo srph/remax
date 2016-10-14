@@ -1,19 +1,37 @@
+// Run `dotenv` module
 require('dotenv-autoload');
 
+var webpack = require('webpack');
+var stringify = require('stringify-object-values');
+
 module.exports = {
+  // Basic input-output configuration
   entry: './src/index.js',
   output: {
-    filename: 'script.js',
-    path: __dirname + '/../public/dist/'
+    path: './public/dist/',
+    filename: 'script.js'
   },
+
   module: {
+    // Make Buble, our transpiler, to work
     loaders: [{
-      test: /\.(js|jsx|es6)$/,
       exclude: /node_modules/,
-      loader: 'babel'
+      test: /\.js$/,
+      loader: 'buble'
     }]
   },
+
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx', '.es6']
-  }
+    // Easily import app-level files
+    // Before: import x from '../../components/x';
+    //  After: import x from 'app/components/x';
+    alias: {
+      app: [process.cwd(), 'src'].join('/')
+    }
+  },
+
+  plugins: [
+    // Allow our application to read environment config
+    new webpack.DefinePlugin({ 'process.env': stringify(process.env) })
+  ]
 };

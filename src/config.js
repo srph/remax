@@ -1,3 +1,11 @@
+// ==================================================
+// Configuration
+// ==================================================
+// This file contains all configuration for almost
+// everything. This is the recommended way to organize
+// oauth keys, and so on; not required.
+// ==================================================
+
 export default {
   // ==============================
   // The API Host

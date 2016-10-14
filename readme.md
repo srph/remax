@@ -1,13 +1,12 @@
 # react-redux-starter-kit
-An opinionated non-universal react+redux starter kit.
+An opinionated yet dead-simple non-universal React+Redux starter kit.
 
 ## Libraries
 - [React](https://github.com/facebook/react)
 - [React Router](https://github.com/reactjs/react-router)
 - [Redux](https://github.com/reactjs/redux)
 - [Axios](https://github.com/mzabriskie/axios)
-- Build: [Babel](babeljs.io) / [Webpack](https://webpack.github.io/)
-- Testing: [Karma](https://karma-runner.github.io/) / [Mocha](http://mochajs.org) / [Chai](http://chaijs.com) / [Sinon](http://sinonjs.org/) / [Enzyme](http://airbnb.io/enzyme/docs/api/shallow.html)
+- Build: [Buble](https://buble.surge.sh) / [Webpack](https://webpack.github.io/)
 - Styling: [Sass](https://github.com/sass/node-sass) / [Autoprefixer](https://github.com/postcss/autoprefixer) / [CSS Nano](https://github.com/ben-eb/cssnano)
 
 ## Getting Started
@@ -41,11 +40,12 @@ Most configuration is stored on [`src/config.js`](src/config.js). For environmen
 |----|----|
 |`npm run watch:script`|watch for file changes and compile scripts|
 |`npm run watch:style`|watch for file changes and compile stylesheets|
+|`npm run build:style`|simply compile scripts|
+|`npm run build:style`|simply compile stylesheets|
 |`npm start`|runs `watch:script` and `watch:style`|
-|`npm watch:test`|watches for file changes and runs test|
-|`npm test`|run tests (single run)|
 
 ## 101
+- The `src` directory is aliased as `app`
+  - Before: `import X from '../../components/X'`
+  - After: `import X from 'app/components/X'`
 - This repository follows [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux).
-- [babel-plugin-module-alias](https://github.com/tleunen/babel-plugin-module-alias) is being used for the aliases. Everything in `src` is aliased under `app` (e.g., `import from 'app/components/'`). You may configure this in [`.babelrc`](.babelrc).
-- The bootstrap file (imported in [`src/index.js#L2`](src/index.js#L2)) is useful for libraries that need to be initialized (e.g., axios interceptors, et al.).

@@ -26,7 +26,6 @@
     "redux-thunk": "^1.0.0"
   },
   "devDependencies": {
-    "app-module-path": "^2.1.0",
     "autoprefixer": "^6.3.3",
     "buble": "^0.13.0",
     "buble-loader": "^0.2.2",

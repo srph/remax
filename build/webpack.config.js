@@ -17,7 +17,13 @@ module.exports = {
     loaders: [{
       exclude: /node_modules/,
       test: /\.js$/,
-      loader: 'buble'
+      loader: 'buble',
+      // We need to provide an Object.assign polyfill to enable Object spread.
+      // (aka x = { ...x, y: ? })
+      // @see https://buble.surge.sh/guide/#unsupported-features
+      query: {
+        objectAssign: 'Object.assign'
+      }
     }]
   },
 

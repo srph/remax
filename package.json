@@ -1,9 +1,9 @@
 {
   "name": "react-redux-starter-kit",
   "scripts": {
-    "build:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress --verbose -d --display-error-details",
-    "watch:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress -w --verbose -d --display-error-details",
-    "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress -p --verbose -d --display-error-details",
+    "build:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress --verbose --display-error-details",
+    "watch:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress -w --verbose --display-error-details",
+    "prod:script": "node_modules/.bin/webpack --config=build/webpack.config.js --progress -p --verbose --display-error-details",
     "build:style": "node-sass src/styles/style.scss -o public/dist",
     "watch:style": "npm run build:style && node-sass -w src/styles/style.scss -o public/dist",
     "post:style": "postcss -u autoprefixer --autoprefixer.browsers '> 5%' -u cssnano -o public/dist/style.css public/dist/style.css",
